@@ -1,0 +1,21 @@
+{
+  "name": "Calculator_nodejs_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server",
+    "start:database": "docker-compose -f docker-compose-database.yml up -d",
+    "migration:reload": "yarn sequelize db:migrate:undo:all && yarn sequelize db:migrate",
+    "seed:reload": "yarn sequelize db:seed:undo:all && yarn sequelize db:seed:all"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mariadb": "^2.5.4",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
