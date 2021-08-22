@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  mariadb:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: calculatorroot
+      MYSQL_DATABASE: calculator
+      MYSQL_USER: calculator
+      MYSQL_PASSWORD: calculator
+    ports:
+      - 3306:3306
