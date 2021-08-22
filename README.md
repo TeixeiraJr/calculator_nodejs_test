@@ -1,5 +1,5 @@
 # Calculator_nodejs_test-backend
-# API para teste de desenvolvedor junior para a L5_CONNECT
+# API para teste de desenvolvedor junior
 
 # REGRAS DE NEGÓCIOS
 
