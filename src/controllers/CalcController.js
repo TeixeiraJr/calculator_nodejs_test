@@ -17,10 +17,11 @@ module.exports = {
 
     },
     
+
     async store(req, res) {
         const { calculation, user } = req.body;
 
-        const calculator = await Calculator.create({ calculation, user })
+        const calculator = await Calculator.create({ calculation, user, result })
 
         return res.json(calculator)
     }
