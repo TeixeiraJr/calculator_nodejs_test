@@ -2,19 +2,24 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-   await queryInterface.createTable('calcs', {
+   await queryInterface.createTable('calculator', {
      id: {
        type: Sequelize.INTEGER,
        primaryKey: true,
        autoIncrement: true,
        AllowNull: false,
           },
-      calc: {
+      calculation: {
          type: Sequelize.STRING,
          AllowNull: false,
       },
-      user_calc: {
+      user: {
         type: Sequelize.STRING,
+        AllowNull: false,
+        unique: true,
+      },
+      result: {
+        type: Sequelize.DECIMAL,
         AllowNull: false,
         unique: true,
       },
