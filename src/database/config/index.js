@@ -10,6 +10,6 @@ module.exports = {
         underscored: true,
         //cria os títulos das colunas com "snake_case"
         freezeTableName: true
-        //impede a pluralizacao das colunas
+        //impede a pluralizacao das colunas feita pelo sequelize
     }
 }

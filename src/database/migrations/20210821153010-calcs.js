@@ -16,12 +16,11 @@ module.exports = {
       user: {
         type: Sequelize.STRING,
         AllowNull: false,
-        unique: true,
+        unique: false
       },
       result: {
         type: Sequelize.DECIMAL,
-        AllowNull: false,
-        unique: true,
+        AllowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,
