@@ -11,6 +11,7 @@
     "seed:reload": "yarn sequelize db:seed:undo:all && yarn sequelize db:seed:all"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mariadb": "^2.5.4",
     "mysql2": "^2.3.0",
