@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon src/server.js",
     "start:database": "docker-compose -f docker-compose-database.yml up -d",
-    "start:mariadb": "docker run --name calculator -e MYSQL_ROOT_PASSWORD=calculatorroot -p 3306:3306 -d docker.io/library/mariadb",
     "migration:reload": "yarn sequelize db:migrate:undo:all && yarn sequelize db:migrate",
     "seed:reload": "yarn sequelize db:seed:undo:all && yarn sequelize db:seed:all"
   },
