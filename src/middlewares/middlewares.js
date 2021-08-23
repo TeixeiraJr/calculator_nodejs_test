@@ -12,3 +12,9 @@ exports.isUsername = async (req, res, next) => {
     if (!isUser) return res.status(400).json({ errors: [{ title: 'Error', message: 'Usuário não encontrado' }] , })
     return next();
 }
+
+exports.isValidAccount =(req, res, next) => {
+    const username = req.body.calculation;
+    if (!username) return res.status(400).json({ errors: [{ title: 'Error', message: 'Expressão inválida' }] , })
+    return next();
+}
