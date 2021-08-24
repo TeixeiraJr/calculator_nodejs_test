@@ -1,33 +1,10 @@
 ##Documentação
 
-## Documentação de arquitetura do Framework Bot
-
-* Requisito de desenvolvimento
-* Instalação de dependências
-* Configurações de ambiente
-  * TOKIO Integration
-  * Database
-  * AWS Configuration
-  * Framework
-* Arquitetura do Framework 
-  * Qualidade de código
-  * Framework externos
-  * ORM/Plugins
-  * Serviços externos
-  * Arquitetura de camada
-  * Modelo entidade relacionamento
-  * Modelo de arquitetura de servidores
-* Iniciar projeto
-* Soluções para possíveis erros
-
-
 ### Requisito de desenvolvimento
 Requisitos obrigatórios para uso do framework:
 - Node 14.15.1 [Node](https://nodejs.org)
 - Mariadb 2.5.4 [Mariadb](https://www.mariadb.org)
 - Yarn 1.22.10 [Yarn](https://yarnpkg.com/)
-
-Requisitos opcionais para o uso do framework:
 - Docker version 20.10.5 [Docker](https://https://www.docker.com/products/docker-desktop)
 - Docker Compose 1.29.0  [Docker Compose](https://docs.docker.com/compose/install/)
 
@@ -57,16 +34,16 @@ As variáveis do arquivo ````.env```` são:
 
 ```dotenv
 
-## Database
+# Database desenvolvimento
+DATABASE_TYPE=""
+DATABASE_HOST=""
 DB_USERNAME=""
 DB_PASSWORD=""
 DATABASE_NAME=""
-DATABASE_HOST=""
-DATABASE_TYPE=""
 
 # PORT Service
 PORT="3333"
-
+```
 
 ### Database
 
@@ -139,7 +116,6 @@ Existem 2 opções para iniciar o projeto:
 Para iniciar o projeto por script de inicialização do ```package.json``` execute os seguintes comandos:
 
 ```shell
-yarn start:database
 yarn start
 ```
 
@@ -161,7 +137,7 @@ Endpoints referentes ao desafio técnico de backend em nodejs de uma calculadora
 
 Não foi implementado métodos para autenticação nesta API, logo a mesma dispensa este tipo de metodologia.
 
-### Requisições de usuário
+## Requisições de usuário
 
 ## Execução de cálculo
 ### Tipo de método: POST
