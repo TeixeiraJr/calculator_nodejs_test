@@ -159,19 +159,19 @@ Recebe um JSON como entrada contendo calculation (expressão matémática - rece
 ### Tipo de método: GET
 
 ```shell
-http://localhost:3333/calcs?page=1&limit=10
+http://localhost:3333/calcs
 ```
 
-Retorna todos os cálculos executados na calculadora (recebe paginação).
+Retorna todos os cálculos executados na calculadora (por ser uma aplicação simples, não fom implementado paginação).
 
 ## Listagem de cálculos realizados por usuário específico
 ### Tipo de método: GET
 
 ```shell
-http://localhost:3333/calcs/junior?page=1&limit=10
+http://localhost:3333/calcs/junior
 ```
 
-Retorna todos os cálculos executados na calculadora de um usuário específico com base no nome de usuário informado na requisição (recebe paginação).
+Retorna todos os cálculos executados na calculadora de um usuário específico com base no nome de usuário informado na requisição (por ser uma aplicação simples, não fom implementado paginação).
 
 ## Estrutura do banco de dados
 
